@@ -1,0 +1,67 @@
+.allarticles {
+	list-style: none;
+	width: 70%;
+	height: 130px;
+	margin-left: 15%;
+	padding-top: 5px;
+	border: 2px solid gray;
+	border-radius: 6px;
+}
+
+.editBtn1 {
+	background-color: blue; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 2px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.editBtn1:hover {
+	text-decoration: none;
+	color: white;
+
+}
+
+.editBtn2 {
+	background-color: green; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 2px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.editBtn2:hover {
+	text-decoration: none;
+	color: white;
+
+}
+
+.editBtn3 {
+	background-color: red; /* Green */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 2px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.editBtn3:hover {
+	text-decoration: none;
+	color: white;
+
+}
+
