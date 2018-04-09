@@ -1,0 +1,15 @@
+
+.formular {
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+.txttitle {
+	width: 80%;
+
+}

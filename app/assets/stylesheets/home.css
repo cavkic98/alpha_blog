@@ -1,0 +1,93 @@
+
+
+.sajnap {
+  width: 100%;
+  height: 300px;
+  background-color: gray;
+}
+
+.navBar {
+  background:white;
+  color: white;
+  height: 60px;
+  position: relative;
+
+}
+
+.navBar >ul {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkovi {
+list-style: none;
+position: absolute;
+right: 0;
+padding-right: 15px;
+display: flex;
+flex-direction: row;
+
+
+
+}
+
+
+
+.logo {
+  position: absolute;
+  left: 0;
+  color: #4bcfe7;
+  padding-left: 10px;
+  font-size: 45px;
+  height: 100%;
+
+}
+
+.logoRB {
+  font-weight: bold;
+}
+
+.logoRB:hover {
+  cursor: pointer;
+	text-decoration:none;
+	
+}
+
+
+.RegLog {
+  background-color: #199EB8; /* Green */
+  border-radius: 12px;
+  margin-left: 15px;
+  width: 150px;
+  height:35px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  }
+
+.RegLog:hover {
+  cursor: pointer;
+  background-color: #4bcde7;
+
+}
+
+.ponudiPrijevoz {
+  color:#199EB8;
+  position: relative;
+  font-size: 23px;
+  padding-right: 20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  
+}
+
+.ponudiPrijevoz:hover{
+  font-size: 25px;
+  cursor: pointer;
+  color:#4bcde7;
+
+}

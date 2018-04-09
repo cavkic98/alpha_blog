@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   width: 100%;
+}
+
+ .svaki {
+ 	border-left: 100px solid white;
+ 	border-right: 100px solid white;
+ 	border-top: 30px solid white;
+ }
+
