@@ -88,6 +88,16 @@ flex-direction: row;
 
 }
 
+.RegLog2 {
+
+  color: white;
+
+}
+
+.RegLog2:hover {
+  text-decoration: none;
+}
+
 .ponudiPrijevoz {
   color:#199EB8;
   position: relative;
