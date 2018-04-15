@@ -1,0 +1,22 @@
+<h1 style="font-weight: bold; text-align: center"> All Alpha bloggers </h1>
+<div align="center" ">
+<%= will_paginate%>
+</div>
+<% @users.each do |user| %>
+
+
+<ul class="allusers">
+
+<li style="padding-top: 5px;font-size: 20px "><%= link_to "#{user.username}", user_path(user)%> </li><br>
+<li><%= link_to gravatar_for(user), user_path(user)%></li>
+<li style="font-size: 10px; padding-top: 10px;"><%= pluralize(user.articles.count, "article") if user.articles%></li>
+</ul>
+
+
+
+
+
+<%end%>
+<div align="center" ">
+<%= will_paginate%>
+</div>

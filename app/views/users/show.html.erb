@@ -6,7 +6,12 @@
 
 <h4><%=@user.username%>'s articles:</h4><br>
 
-<%= render 'articles/article', obj: @user.articles%>
+<% if @user.articles.count>5%>
+<div align="center" ">
+<%= will_paginate @user_articles%>
+</div>
+<%end%>
+<%= render 'articles/article', obj: @user_articles%>
 
 
 
