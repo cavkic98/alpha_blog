@@ -1,9 +1,21 @@
 <nav class="navBar">
             <div class="logo"><%= link_to "ALPHA BLOG", root_path, class: "logoRB"%></div>
          
+
+        <% if logged_in? %>
           <ul class="linkovi">
             <li class="ponudiPrijevoz"><%= link_to "New article", new_article_path, class: "logoRB"%></li>
-            <li class="RegLog"><%=link_to"Sign up", signup_path, class: "RegLog2"%></li>
-            <li class="RegLog" onclick="myhref('file:///C:/Users/Cavkic/Desktop/%C5%A1toper.ba/prijava.html');">Prijava</li>
+            <li class="RegLog"><%=link_to"Logout", logout_path, method: :delete,  class: "RegLog2"%></li>
+          
           </ul>
+
+        <% else %>
+
+          <ul class="linkovi">
+            <li class="RegLog"><%=link_to"Sign up", signup_path, class: "RegLog2"%></li>
+            <li class="RegLog"><%=link_to"Log in", login_path, class: "RegLog2"%></li>
+          </ul>
+
+        <%end%>
 </nav>
+

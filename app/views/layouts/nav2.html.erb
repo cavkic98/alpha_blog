@@ -1,0 +1,44 @@
+
+<nav class="navBar">
+            <div class="logo"><%= link_to "ALPHA BLOG", root_path, class: "logoRB"%></div>
+         
+          <ul class="linkovi">
+        <% if logged_in?%>
+            <li class="ponudiPrijevoz"><%= link_to "New article", new_article_path, class: "logoRB"%></li>
+            <li class="drowpdown_profil"><%=link_to"Log out", logout_path, method: :delete%>
+              <ul>
+                <li><%=link_to"Log out", logout_path, method: :delete, class: "RegLog2"%></li>
+                <li><%=link_to"Log out", logout_path, method: :delete%><</li>
+              </ul>
+            </li>
+        <%else%>
+            <li class="RegLog"><%=link_to"Sign up", signup_path, class: "RegLog2"%></li>
+            <li class="RegLog"><%=link_to"Login", login_path, class: "RegLog2"%></li></li>
+         <%end%>
+          </ul>
+</nav>
+
+
+
+<nav>
+            <p><%= link_to "ALPHA BLOG", root_path, class: "logoRB"%><p>
+         
+         <% if logged_in?%>
+          <ul>
+            <li><a><%= link_to "New article", new_article_path%></a></li>
+            <li><a href="#">Profile</a>
+              <ul>
+                <li><%=link_to"Log out", logout_path, class: "reglog", method: :delete%></li>
+                <li><%=link_to"Log out", logout_path, class: "reglog", method: :delete%></li>
+              </ul>
+            </li>
+          </ul>
+        <%else%>
+
+          <ul class="linkovi">
+            <li class="RegLog"><%=link_to"Sign up", signup_path, class: "RegLog2"%></li>
+            <li class="RegLog"><%=link_to"Login", login_path, class: "RegLog2"%></li></li>
+          </ul>
+         <%end%>
+          </ul>
+</nav>
