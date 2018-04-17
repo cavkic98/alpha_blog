@@ -40,11 +40,15 @@ right: 0;
 padding-right: 15px;
 display: flex;
 flex-direction: row;
-
-
-
 }
 
+.linkovi li  ul{
+  display: none;
+}
+
+.linkovi li:hover > ul {
+  display: block;
+}
 
 
 .logo {
@@ -70,16 +74,15 @@ flex-direction: row;
 
 .RegLog {
   background-color: #199EB8; /* Green */
-  border-radius: 12px;
+  border-radius: 6px;
   margin-left: 15px;
   width: 150px;
   height:35px;
   text-decoration: none;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  line-height: 35px;
+ 
   }
 
 .RegLog:hover {
@@ -88,9 +91,27 @@ flex-direction: row;
 
 }
 
+.dropdown_ul {
+  background-color: #199EB8; 
+  text-align: center; 
+  list-style: none; 
+  border-radius: 6px;
+}
+
+.dropdown_ul li {
+  padding-right: 28%;
+  width: 100%;
+  font-size: 14px;
+
+}
+
+
+
 .RegLog2 {
 
   color: white;
+  display: inline;
+
 
 }
 
