@@ -7,7 +7,7 @@
 
 <li style="padding-top: 5px;font-size: 20px "><%= link_to "#{article.title}", article_path(article)%> </li><br>
 <li style="font-size: 10px"><%=truncate(article.description, length: 100)%><br><br>
-<%if logged_in? && current_user == article.user %>
+<%if logged_in? && (current_user == article.user || current_user.admin?)%>
 	<%=link_to "Edit", edit_article_path(article), class: "editBtn1"%> | <%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure="}, class: "editBtn3"%> <%end%>
 	<h5 style="font-size: 11px;float: right;position: relative; margin-right:3px">Created by: <%=link_to "#{article.user.username}", user_path(article.user) if article.user %>, <%=time_ago_in_words(article.created_at)%> ago, last update: <%= time_ago_in_words(article.updated_at)%></h5><br><br>
 

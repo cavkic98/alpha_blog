@@ -5,7 +5,7 @@
         <% if logged_in? %>
           <ul class="linkovi">
             <li class="ponudiPrijevoz"><%= link_to "New article", new_article_path, class: "logoRB"%></li>
-            <li class="RegLog"> Profile
+            <li class="RegLog"><%= "Admin" if current_user.admin?%> Profile 
 	            <ul class="dropdown_ul">
 		            <li><%=link_to"Edit profile", edit_user_path(current_user),  class: "RegLog2"%></li>
 		            <li><%=link_to"View profile", user_path(current_user),  class: "RegLog2"%></li>
